@@ -1,0 +1,10 @@
+# Pinned environment for reproducing a GOLEM run. Generated against Python 3.12.4.
+#
+# The benchmark's *integrity* checks (golem-validate, golem-build, golem.metric) need
+# none of this — they are stdlib only. These pins matter for the evaluation harness,
+# where a silent change in provider defaults (temperature, tool schema, retry policy)
+# would move every published number.
+inspect-ai==0.3.260
+openai==3.5.0
+pydantic==2.13.4
+numpy==2.5.2
